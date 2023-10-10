@@ -1,5 +1,7 @@
 package com.allendowney.thinkdast;
 
+import java.util.Arrays;
+
 public class SelectionSortPractice {
     public void swapElement(int[] array, int i, int j) {
         int temp = array[i];
@@ -33,27 +35,31 @@ public class SelectionSortPractice {
 
         int[] intArray = {9, 6, 0, 6, 2, 0};
 
-        System.out.print("selectionSort 전 array {");
-        for (int i = 0; i < intArray.length; i++) {
-            if(i != intArray.length-1) {
-                System.out.print(intArray[i] + ",");
-            } else {
-                System.out.print(intArray[i]);
-            }
-        }
-        System.out.println("}");
+        System.out.print("selectionSort 전 array : ");
+//        for (int i = 0; i < intArray.length; i++) {
+//            if(i != intArray.length-1) {
+//                System.out.print(intArray[i] + ",");
+//            } else {
+//                System.out.print(intArray[i]);
+//            }
+//        }
+//        System.out.println("}");
+        System.out.println(Arrays.toString(intArray));
 
         ssp.selectionSort(intArray);
 
-        System.out.print("selectionSort 후 array {");
-        for (int i = 0; i < intArray.length; i++) {
-            if(i != intArray.length-1) {
-                System.out.print(intArray[i] + ",");
-            } else {
-                System.out.print(intArray[i]);
-            }
-        }
-        System.out.println("}");
+        System.out.print("selectionSort 후 array : ");
+//        for (int i = 0; i < intArray.length; i++) {
+//            if(i != intArray.length-1) {
+//                System.out.print(intArray[i] + ",");
+//            } else {
+//                System.out.print(intArray[i]);
+//            }
+//        }
+//        System.out.println("}");
+        System.out.println(Arrays.toString(intArray));
+
+
 
     }
 }
